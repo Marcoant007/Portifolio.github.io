@@ -76,7 +76,7 @@ h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 250px;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
@@ -236,7 +236,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/2352.jpg") top center;
+    background: url("../img/milkyspace.png") top center;
     background-size: cover;
 }
 
