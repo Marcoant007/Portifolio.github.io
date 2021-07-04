@@ -236,7 +236,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/milkyspace.png") top center;
+    background: url("../img/astro.jpg") top center;
     background-size: cover;
 }
 
@@ -308,7 +308,8 @@ section {
 }
 
 .section-bg {
-    background: #f5f8fd;
+    background: #303031;
+    color: white;
 }
 
 .section-title {
@@ -440,7 +441,7 @@ section {
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #050d18;
+    color: #fafafa;
 }
 
 .skills .progress .skill .val {
@@ -457,7 +458,7 @@ section {
     width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #149ddd;
+    background-color: #46d80c;
 }
 
 
