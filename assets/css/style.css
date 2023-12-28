@@ -236,9 +236,20 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/astro.jpg") top center;
+    background: url("../img/newbackgroundcyber.gif") top center;
     background-size: cover;
 }
+
+.skill-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill-logo img {
+    margin-right: 10px;
+    height: 100px; /* Ajuste a altura conforme necessário */
+  }
 
 #hero:before {
     content: "";
@@ -308,7 +319,7 @@ section {
 }
 
 .section-bg {
-    background: #303031;
+    background: #040b14;
     color: white;
 }
 
