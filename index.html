@@ -370,22 +370,33 @@
                     <p>Aqui estão alguns dos meus projetos, caso queira ver todos <a
                             href="https://github.com/Marcoant007">clique aqui</a> </p>
                 </div>
-                 <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter=".filter-web"><a href="assets/docs/Curriculo.pdf" download>Download CV</a></li>
-                        </ul>
-                    </div>
-                  </div>
 
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button class="btn btn-curriculo dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Download Currículo
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" onclick="downloadCurriculo('pt')">
+                                <img src="assets/img/icons/br-flag.png" alt="Português" width="20" height="20">
+                                Português
+                            </a>
+                            <a class="dropdown-item" onclick="downloadCurriculo('en')">
+                                <img src="assets/img/icons/eua-flag.png" alt="English" width="20" height="20"> English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="assets/img/project-icons/rentx.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/project-icons/rentx.png" data-gall="portfolioGallery" class="venobox"
-                                    title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/project-icons/rentx.png" data-gall="portfolioGallery"
+                                    class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                                 <a href="https://github.com/Marcoant007/rentx-service-api" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -444,24 +455,24 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/project-icons/dsmeta.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/project-icons/dsmeta.png" data-gall="portfolioGallery" class="venobox"
-                                    title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/project-icons/dsmeta.png" data-gall="portfolioGallery"
+                                    class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                                 <a href="https://github.com/Marcoant007/Dsmeta" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
 
-                  
+
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="assets/img/project-icons/dead-lettler.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="https://marcoantdeveloper.netlify.app/" data-gall="portfolioGallery" class="venobox"
-                                    title="Card 2"><i class="bx bx-plus"></i></a>
-                                <a href="https://github.com/Marcoant007/quarkus-rabbit-queues" title="More Details" target="_blank"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="https://marcoantdeveloper.netlify.app/" data-gall="portfolioGallery"
+                                    class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                <a href="https://github.com/Marcoant007/quarkus-rabbit-queues" title="More Details"
+                                    target="_blank"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
@@ -470,8 +481,8 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/project-icons/Players.jpg" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/project-icons/Players.jpg" data-gall="portfolioGallery" class="venobox"
-                                    title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/project-icons/Players.jpg" data-gall="portfolioGallery"
+                                    class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                                 <a href="https://github.com/Marcoant007/Players" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -482,8 +493,8 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/project-icons/youtube-api.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/project-icons/youtube-api.png" data-gall="portfolioGallery" class="venobox"
-                                    title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/project-icons/youtube-api.png" data-gall="portfolioGallery"
+                                    class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                                 <a href="https://github.com/Marcoant007/youtube-express-api" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -515,7 +526,21 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8967460.js"></script>
-
+    <script>
+        function downloadCurriculo(lang) {
+            var link = document.createElement('a');
+            if (lang === 'pt') {
+                link.href = 'assets/docs/br-curriculo-marco.pdf';
+                link.download = 'Curriculo_Marco_PT.pdf';
+            } else if (lang === 'en') {
+                link.href = 'assets/docs/en-curriculo-marco.pdf';
+                link.download = 'Curriculo_Marco_EN.pdf';
+            }
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 
 </html>

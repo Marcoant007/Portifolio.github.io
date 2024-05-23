@@ -445,6 +445,10 @@ section {
     border-radius: 0;
 }
 
+.dropdown-menu img {
+    margin-right: 10px;
+}
+
 .skills .progress .skill {
     padding: 0;
     margin: 0 0 6px 0;
@@ -472,6 +476,29 @@ section {
     background-color: #46d80c;
 }
 
+.btn-curriculo {
+    color: #fff;
+    background-color: #8a22a7;
+    /* border-color: #39205a; */
+    margin-top: -42px;
+}
+
+.btn-curriculo :hover {
+    color: #fff;
+    background-color: #8a22a7;
+}
+.btn:hover {
+    color: #fff!important;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: #8a22a7;
+    color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Resume
